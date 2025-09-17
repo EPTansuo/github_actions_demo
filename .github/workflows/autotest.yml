@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - name: Install build-essentials
+      - name: Install build-essential
         run: | 
-          suto apt install build-essentials
+          sudo apt install build-essential
         
       - name: Buld the project
         run: make build
